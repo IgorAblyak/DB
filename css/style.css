@@ -1,0 +1,143 @@
+
+
+html {
+  margin: 0;
+  background-color: #ccc;
+  font-family: Arial, serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  max-width: 1012px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.header-top {
+  width: 1012px;
+  min-height: 110px;
+}
+
+.logo {
+  float: left;
+  width: 250px;
+  padding-top: 25px;
+  padding-left: 35px;
+}
+
+.logo img {
+  float: left;
+}
+
+.logo p {
+  margin:0;
+  padding-top: 15px;
+  padding-left: 90px;
+  font: bold 24px/20px Ubuntu;
+  color: #f29700;
+}
+
+.logo span {
+  font: 12px/20px Arial;
+  color: #000;
+}
+
+.search {
+  position: relative;
+  float: right;
+  margin-top: 43px;
+  margin-right: 37px;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.search-input {
+  width: 240px;
+  padding: 2px 25px 2px 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.search-submit {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  border: none;
+  background: url(../img/btn-submit.png) 0px 0px no-repeat #fff;
+  cursor: pointer;
+}
+
+.search-submit:hover {
+  background-position: 0px -25px;
+}
+
+.search-submit:focus {
+  background-position: 0px -25px;
+  outline: none;
+}
+
+.header-bottom {
+  border-top: 1px solid #ccc;
+}
+
+.main-menu {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-menu li {
+  display: inline-block;
+  font: bold 15px/20px Arial;
+}
+
+.main-menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  background-color: #f29700;
+  color: #fff;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+.main-menu .menu-item-active {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+footer {
+  clear: both;
+  min-height: 100px;
+  background: #abb88e;
+  text-align: center;
+}
+
+footer span {
+  margin-right: 30px;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
