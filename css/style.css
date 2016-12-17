@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  position: relative;
   max-width: 1012px;
   min-height: 100%;
   margin: 0 auto;
@@ -16,24 +17,25 @@ body {
 }
 
 h1 {
-  margin-left:30px;
   padding-bottom:10px;
   font: 60px/48px Roboto bold;
   color:#fff;
-  text-align:left;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .header-top {
-  width: 1012px;
   min-height: 110px;
 }
 
 .logo {
   float: left;
   width: 250px;
-  padding-top: 25px;
-  padding-left: 35px;
+  margin-top: 25px;
+  margin-left: 35px;
 }
 
 .logo img {
@@ -135,6 +137,24 @@ input[type="search"] {
   box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
 }
 
+.main-menu input[type="checkbox"] {
+    display: none;
+}
+
+.main-menu label {
+    display: none;
+    padding: 2.4038% 5%;
+    color: #f29700;
+    border: 2px solid #f29700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-menu label:hover{
+    color: #0e65b7;
+    border: 2px solid #0e65b7;
+}
+
 /* Slider */
 
 .slider-cut {
@@ -203,13 +223,14 @@ input[type="search"] {
 .image {
   width:100%;
   height:100%;
-  background-color: #69c;
+  background-color: #0e65b7;
 }
 
 .image img {
   width:100%;
   height:100%;
   filter: brightness(80%);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
 }
 
 
@@ -252,10 +273,13 @@ input[type="search"] {
   overflow:hidden;
 }
 
-footer {
+.content { display: none; }
+
+/* End Slider */
+
+.main-footer {
   border-bottom: 1px solid #ccc;
 }
-
 
 .services ul {
   padding: 0;
@@ -298,4 +322,166 @@ footer {
   content: "";
   display: table;
   clear: both;
+}
+
+
+
+@media screen and (max-width: 1280px) {
+
+  body {
+    max-width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  body {
+    max-width: 100%;
+  }
+
+  .main-menu {
+    width: 100%;
+  }
+
+  .services li {
+  vertical-align: top;
+  min-height: 100%;
+  }
+
+  .services img {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .services p {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  html {
+    font-size: 1em;
+  }
+
+  body {
+    max-width: 100%;
+  }
+
+  h1 {
+    padding-bottom: 1.6666%;
+    font: 2.25rem/2rem Roboto bold;
+  }
+
+  .logo {
+    float: none;
+    margin: 0 auto;
+    padding-top: 3%;
+  }
+
+  .logo img {
+    float: left;
+  }
+
+  .logo p {
+    padding-top: 3%;
+    padding-left: 36%px;
+    font: bold 1.5rem/1.25rem Ubuntu;
+  }
+
+  .logo span {
+    font: 0.75rem/1.25rem Arial;
+    color: #000;
+  }
+
+  .form-wrap {
+    width: 50%;
+    margin: 5% auto;
+  }
+
+  .search {
+    position: relative;
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  input[type="search"] {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  .search-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .header-bottom {
+    margin-bottom: 10px;
+    border: none;
+  }
+
+  .main-menu li {
+    display: block;
+    font: bold 0.75rem/1.1rem Arial;
+  }
+
+  .main-menu li a {
+  padding: 5px 10px;
+  }
+
+  .main-menu ul { 
+    display: none;
+  }
+
+  .main-menu label {
+    display: inline-block;
+  }
+
+  .main-menu input[type="checkbox"]:checked ~ label + ul {
+    display: block;
+  }
+
+  .slider-cut { display: none; }
+
+  .content { 
+    display: block;
+    background: #0e65b7;
+    background-size: cover;
+  }
+
+  .content-txt {
+    width: 59.2885%;
+    top:13.9013%;
+    left:18%;
+  }
+
+  .content-wrap {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+  .services li {
+    display: block;
+    font: bold 0.8rem Arial;
+}
+
+  .content-txt p { 
+    margin-top: 3.6666%;
+    font-size: 0.8rem;
+  }
+
+  .slider-mark {
+    margin-bottom: 2.2421%;
+    padding: 1.7937% 1.5%;
+    font: 0.8rem Roboto bold;
+}
+
 }

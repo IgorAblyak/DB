@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Логотип - Инжиниринговая компания</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:700|Ubuntu:700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -9,18 +10,22 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="header-top clearfix">
-        <div class="logo">
+      <div class="header-top">
+        <div class="logo clearfix">
           <img src="img/logo.jpg" alt="Логотип">
           <p>Логотип<br><span>Инжиниринговая компания</span></p>
         </div>
-        <form action="#" method="post" class="search">
-          <input type="search" name="" class="search-input" />
-          <input type="submit" name="" value="" class="search-submit" />
-        </form>
+        <div class="form-wrap">
+          <form action="#" method="post" class="search">
+            <input type="search" name="" class="search-input" />
+            <input type="submit" name="" value="" class="search-submit" />
+          </form>
+        </div>
       </div>
       <div class="header-bottom">
         <nav class="main-menu">
+          <input type="checkbox" name="menu" id="btn-menu" />
+          <label for="btn-menu">Меню</label>
           <ul>
               <li><a href="index.html">О компании</a></li>
               <li><a href="#">Услуги</a></li>
@@ -35,6 +40,13 @@
     </header>
     <main>
       <!-- Slider -->
+      <div class="content">
+        <div class="content-wrap">
+                <div class="slider-mark">Наши компетенции</div>
+                <h1>Объекты<br>химической промышленности</h1>
+                <p>Важнейшим преимуществом компании является способность<br>проектировать и&nbsp;строить &laquo;под ключ&raquo;. При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>
+              </div>
+      </div>
       <div class="slider-cut">
         <div class="slider-content">
           <div class="slider-item">
@@ -100,9 +112,7 @@
         </div>
         <div class="switch">
           <ul>
-            <li class="switch-item data-pos="0">
-      <!--         <div class="on"></div> -->
-            </li>
+            <li class="switch-item" data-pos="0"></li>
             <li class="switch-item" data-pos="-100%"></li>
             <li class="switch-item" data-pos="-200%"></li>
             <li class="switch-item" data-pos="-300%"></li>
@@ -111,15 +121,13 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="services">
         <ul>
           <li>
             <a href="index.html">
-              <div class="block">
                 <img src="img/services-1.png">
                 <p>Услуги<br>проектирования</p>
-              </div>
             </a>
           </li>
           <li>
@@ -149,6 +157,7 @@
         </ul>
       </div>
     </footer>
+    <!--[if IE 9]><script type="text/javascript" src="https://cdn.jsdelivr.net/classlist/2014.01.31/classList.min.js"></script><![endif]-->
     <script type="text/javascript" src="js/slider.js"></script>
   </body>
 </html>
